@@ -1,0 +1,339 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+:root {
+    --primary-color: #190482;
+    --secondary-color: #5639a8;
+    --accent-color: #7752fe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Product Sans', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Common styles for sections */
+.section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    max-height: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Welcome Section */
+#welcome {
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+    height: 90vh;
+}
+
+#welcome .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#welcome h1,
+#welcome h2,
+#welcome p {
+    margin-bottom: 20px;
+}
+
+#welcome span {
+    color: var(--accent-color);
+}
+
+#welcome a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#welcome a:hover {
+    background-color: #4c3cb1;
+}
+
+#welcome img {
+    max-height: 280px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Personal Details Section */
+#personal-details {
+    background-color: #fff;
+    padding: 70px 0;
+}
+
+#personal-details h2 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personal-info p {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.personal-info p strong {
+    color: var(--accent-color);
+}
+
+.personal-info p:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Education and Certificates Section */
+#education-certificates,
+#project,
+#footer {
+    padding: 70px 0;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+#education-certificates h2,
+#project h2,
+#footer h1 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-title,
+.card-text {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.card-body {
+    height: 100%;
+    padding: 20px;
+}
+
+.certificate-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.certificate-image img {
+    max-width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Project Section */
+#project {
+    padding: 70px 0;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+#project h2 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+#project .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#project .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#project .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+#project .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+#project .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#project .card-title,
+#project .card-text {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+#project .card-body {
+    height: 100%;
+    padding: 20px;
+}
+
+#project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Footer Section */
+#footer {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+#footer h1 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+#footer h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+#footer a:hover {
+    color: #4c3cb1;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #welcome {
+        height: 100vh;
+    }
+
+    #welcome .row {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    #welcome img {
+        margin-left: 0;
+    }
+
+    #personal-details .personal-info p {
+        font-size: 1em;
+    }
+
+    #project .card-img-top {
+        height: 150px;
+    }
+
+    #project .card {
+        flex-direction: column;
+    }
+}
